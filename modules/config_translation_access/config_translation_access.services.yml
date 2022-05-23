@@ -1,0 +1,17 @@
+services:
+  config_translation_access.overview:
+    decorates: config_translation.access.overview
+    class: Drupal\config_translation_access\ConfigTranslationAccess
+    arguments:
+      - '@config_translation_access.overview.inner'
+      - '@access_manager'
+      - '@plugin.manager.config_translation.mapper'
+      - '@language_manager'
+  config_translation_access.form:
+    decorates: config_translation.access.form
+    class: Drupal\config_translation_access\ConfigTranslationAccess
+    arguments:
+      - '@config_translation_access.form.inner'
+      - '@access_manager'
+      - '@plugin.manager.config_translation.mapper'
+      - '@language_manager'

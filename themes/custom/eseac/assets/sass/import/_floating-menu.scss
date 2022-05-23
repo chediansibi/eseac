@@ -1,0 +1,69 @@
+.floating-menu {
+    position: sticky;
+    bottom: 0;
+    z-index: 601;
+    top: 50%;
+    padding: 0;
+    float: right;
+    margin-right: auto;
+	.nav-list {
+		.nav-item {
+			background: $second-color;
+			list-style: none;
+            text-align: center;
+            padding: 10px 6px 10px 6px;
+            position: relative;
+            width: 70px;
+            border-left: 1px solid $second-color;
+            font-family: 'Montserrat', sans-serif;
+            a {
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                z-index: 999;
+            }
+            i {
+                color: white;
+                font-size: 25px;
+            }
+            p {
+                color: white;
+                margin: 0;
+                font-size: 8px;
+                text-transform: uppercase;
+                line-height: 5px;
+                font-weight: 700;
+                font-family: $font-btn;
+                font-size: 8px;
+                font-weight: 500;
+            }
+            &:hover {
+                background: white;
+                            i {
+                color: $second-color;
+            }
+            p {
+                color: $second-color;
+            }
+
+            }
+            &:not(:last-child) {
+                border-bottom: 1px solid white;
+            }
+            &:first-child {
+                border-top: 1px solid $second-color;
+            }
+            &:last-child {
+                border-bottom: 1px solid $second-color;
+            }
+		}
+	}
+}
+
+
+/* Responsive
+-------------------------------------------------------------- */
+
+

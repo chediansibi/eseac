@@ -1,0 +1,56 @@
+{#
+/**
+ * @file
+ * Default theme implementation to display a block.
+ *
+ * Available variables:
+ * - plugin_id: The ID of the block implementation.
+ * - label: The configured label of the block if visible.
+ * - configuration: A list of the block's configuration values.
+ *   - label: The configured label for the block.
+ *   - label_display: The display settings for the label.
+ *   - provider: The module or other provider that provided this block plugin.
+ *   - Block plugin specific settings will also be stored here.
+ * - content: The content of this block.
+ * - attributes: array of HTML attributes populated by modules, intended to
+ *   be added to the main container tag of this template.
+ *   - id: A valid HTML ID and guaranteed unique.
+ * - title_attributes: Same as attributes, except applied to the main title
+ *   tag that appears in the template.
+ * - title_prefix: Additional output populated by modules, intended to be
+ *   displayed in front of the main title tag that appears in the template.
+ * - title_suffix: Additional output populated by modules, intended to be
+ *   displayed after the main title tag that appears in the template.
+ *
+ * @see template_preprocess_block()
+ *
+ * @ingroup themeable
+ */
+#}
+<section class="about-us-home d-lg-block d-none">
+    <div class="container">
+        <div class="row">
+  {{ title_prefix }}
+  {% if label %}
+    <h2{{ title_attributes }}>{{ label }}</h2>
+  {% endif %}
+  {{ title_suffix }}
+  {% block content %}
+     <div class="col-lg-5 d-flex flex-column justify-content-center">
+                     <div class="about-us-home--title">
+                        <h2 class="title-style line-before-left">
+                           {{ content.field_title.0}}
+                        </h2>
+                     </div>
+                  </div>
+                  <div class="col-lg-7">
+                     <div class="about-us-home--content">
+                        {{content.	body.0}}
+                        <a class="btn g--btn-read-more btn-animated" href="{{ content.field_lire_la_suite.0['#url'] }}">{{ content.field_lire_la_suite.0['#title'] }}
+                        <i class="ri-arrow-drop-right-fill"></i></a>
+                     </div>
+                  </div>
+  {% endblock %}
+</div>
+</div>
+</section>

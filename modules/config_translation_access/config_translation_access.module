@@ -1,0 +1,26 @@
+<?php
+
+/**
+ * @file
+ * Contains config_translate_access.module.
+ */
+
+use Drupal\Core\Routing\RouteMatchInterface;
+
+/**
+ * Implements hook_help().
+ */
+function config_translation_access_help($route_name, RouteMatchInterface $route_match) {
+  switch ($route_name) {
+    // Main module help for the config_translate_access module.
+    case 'help.page.config_translation_access':
+      $output = '';
+      $output .= '<h3>' . t('About') . '</h3>';
+      $output .= '<p>' . t('Adds the %permission permission to allow access to configuration translation routes based on access to the original route.', [
+        '%permission' => t('Translate editable configuration'),
+      ]) . '</p>';
+      return $output;
+
+    default:
+  }
+}

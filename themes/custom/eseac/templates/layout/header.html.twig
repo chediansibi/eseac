@@ -1,0 +1,83 @@
+
+<div class="se-pre-con"></div>
+<header>
+{%if page.system_branding or page.top_menu_right or page.main_menu or page.menu_search  or page.menu_inscription or page.menu_langue %}
+<div class="desctop-menu">
+    <div class="ihe-navbar fixed-top">
+        <div class="container-fluid">
+            <div class=" wrapper-nav ">
+                <div class="logo">
+                {{ page.system_branding }}
+                </div>
+            <div class="wrapper-right">
+                <nav class="main-nav">
+                {{ page.main_menu }}
+                </nav>
+            </div>
+        <div class="part-right">
+            <div class="search">
+               <i class="ri-search-line"></i>
+            </div>
+            <div class="drop-en">
+                <nav>
+                {{ page.menu_search }}
+                {{ page.menu_langue }}
+                </nav>
+            </div>
+            <div class="btn-menu"></div>
+        </div>
+    </div>
+        </div>
+           </div>
+        <div class="menu-right">
+        <i class="ri-add-line"></i>
+            {{ page.top_menu_right }}
+            {{ page.menu_social }}
+        </div>
+        {{ page.menu_search }}
+        </div>
+{%endif%}
+      <!-- mobile menu -->
+    <div class="responsive-menu">
+        <div class="ihe-navbar fixed-top">
+            <div class="container-fluid">
+                <div class="row  wrapper-nav">
+                    <div class="logo">
+                        {{ page.system_branding }}
+                    </div>
+                    <div class="wrapper-right">
+                        <div class="part-right">
+                            <div class="spec-responsive">
+                                <div class="search-lang">
+                                    <div class="search">
+                                        <i class="ri-search-line"></i>
+                                    </div>
+                                    <div class="drop-en">
+                                        {{ page.menu_langue }}
+                                    </div>
+                                </div>
+                                <div class="btn-menu"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="menu-right-responsive">
+            <i class="ri-add-line"></i>
+            <div class="menu-items-right">
+                <div>
+                    {{ page.main_menu }}
+                    <div class="social-media-mobile">
+                        {{ page.menu_social }}
+                    </div>
+                </div>
+            </div>
+            <div class="search-block-form-spec">
+                {{ page.menu_search }}
+            </div>
+        </div>
+    </div>
+</header>
+
+    

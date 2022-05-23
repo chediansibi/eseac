@@ -1,0 +1,4 @@
+translate editable configuration:
+  title: 'Translate editable configuration'
+  description: 'Translate configuration based on access to the original configuration.'
+  restrict access: true

@@ -1,0 +1,37 @@
+global-css:
+  css:
+    theme:
+      assets/stylesheets/ie.css: { browsers: { IE: 'lte IE 9', '!IE': false } }
+      assets/stylesheets/styles.css:  {}
+
+
+
+global-js:
+  js:
+    assets/js/popper.js: {}
+    assets/js/bootstrap.min.js: {}
+    assets/js/owl.carousel.min.js: { }
+    assets/js/main-owl.js: {}
+#    assets/js/wow.min.js: {}
+    assets/js/metisMenu.min.js: {}
+#    assets/js/jquery.nice-select.min.js: {}
+    assets/js/jquery.waypoints.min.js: {}
+    assets/js/jquery.countTo.js: {}
+#    assets/js/gsap.min.js: {}
+#    assets/js/ScrollTrigger.min.js: {}
+    assets/js/navbar.js: {}
+    assets/js/jquery.paroller.min.js: {}
+    assets/js/simpleParallax.min.js: {}
+    assets/js/main.js: {}
+
+  dependencies:
+    - core/drupal
+    - core/jquery
+
+home-js:
+  js:
+#    assets/js/main-owl.js: {} vers haut
+    assets/js/slick.min.js: {}
+    assets/js/carousel-formations.js: {}
+    assets/js/grid-home-page.js: {}
+  

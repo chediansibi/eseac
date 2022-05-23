@@ -1,0 +1,14 @@
+name: Configuration Translation Access
+description: Adds a permission to allow access to configuration translation routes based on access to the original route.
+package: Multilingual
+
+core_version_requirement: ^8.9 || ^9
+type: module
+
+dependencies:
+  - drupal:config_translation
+
+# Information added by Drupal.org packaging script on 2021-06-28
+version: '1.0.0'
+project: 'config_translation_access'
+datestamp: 1624874504

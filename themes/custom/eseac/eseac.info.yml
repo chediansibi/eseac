@@ -1,0 +1,34 @@
+name: Eseac Sfax
+type: theme
+description: "Eseac Sfax Theme Drupal 9"
+package: Core
+core: '8.x'
+core_version_requirement: ^8 || ^9
+base theme: false
+
+libraries:
+  - 'eseac/global-css'
+  - 'eseac/global-js'
+
+
+regions:
+  system_branding: 'System Branding'
+  top_menu_right: 'Top Menu Right'
+  main_menu: 'Main Menu'
+  menu_search: 'Menu search'
+  menu_langue: 'Menu langue'
+  menu_inscription: 'Menu Inscription'
+  menu_social: 'Menu Social'
+  breadcrumb: 'Breadcrumbs'
+  page_title: 'Page Title'
+  banner: 'Banner'
+  status_message: 'Status Message'
+  content_top: 'Content top'
+  content: 'Content'
+  content_bottom: 'Content bottom'
+  footer: 'Footer'
+  footer_second: 'Footer Second'
+  footer_bottom: 'Footer Bottom'
+  footer_copyright: 'Footer Copyright'
+  cookies: 'Cookies'
+  disabled 	: 'Disabled'
