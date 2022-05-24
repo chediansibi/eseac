@@ -47,13 +47,8 @@
 #}
 
 <main class="flex-shrink-0">
-  <header role="banner">
-    {{ page.system_branding }}
-    {{page.top_menu_right}}
-  {{ page.main_menu }}
-  {{ page.menu_search }}
-  {{ page.menu_inscription }}
-  </header>
+ {% include directory ~ '/templates/layout/header.html.twig' %}
+<main>
   {{ page.menu_social }}
   {{ page.breadcrumb }}
   {{ page.page_title}}
